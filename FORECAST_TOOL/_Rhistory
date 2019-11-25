@@ -1,0 +1,512 @@
+1-pnorm(157500,150000,3651.500)
+combn(1000,100)
+factorial(10000)
+a=factorial(10000)\factorial(10000-100)
+a
+a=factorial(10000)/factorial(10000-100)
+a
+recursive.factorial<-function(x){
+if(x==0){ return(1)
+}else {  return(x*recursive.factorial(x-1))
+}
+}
+recursive.factorial(5)
+recursive.factorial(100)
+x=recursive.factorial(100)
+class(x)
+as.integer(x)
+as.double(x)
+x=recursive.factorial(100)
+class(x)
+# question 9
+n<-0
+n<-n+1
+for(i in 2:(x-1)){
+if(x%%i==0){
+primefunc<-function(x){
+as.double(x)
+?rt
+pt(.95,16)
+=sum(409+400+406+399+402+406+401+403+398+403+407+402+410+391)
+a=sum(409+400+406+399+402+406+401+403+398+403+407+402+410+391)
+a
+sd(a)
+dt(.025,15)
+qt(.025,15)
+qt(.975,15)
+qchisq(.025,99)
+qchisq(.025,95)
+qchisq(.025,.95)
+qchisq(.025,.95,ncp=0)
+qnorm(.025,95)
+qnorm(.025,.95)
+pnorm(2050,2000,60)
+pnorm(1900,2000,60)
+x=pnorm(2050,2000,60)
+y=pnorm(1900,2000,60)
+x-y
+pnorm(157000,150000,3651.5007)
+z=pnorm(157000,150000,3651.5007)
+1-z
+qnorm(.025,403.06,3.605)
+qt(.025,403.06,3.605)
+qt(.025,403.06,3.605)
+qt(.025,15)
+qt(.975,15)
+qnorm(.025,150,40)
+qnorm(.975,150,40)
+qt(.025,9)
+qt(.975,9)
+qnorm(.025
+qnorm(.025)
+qnorm(.025)
+qnorm(.025,403.06,3.605)
+library(caret)
+install.packages("installr")
+require(installr)
+update()
+updateR()
+source('C:/Users/Pankaj/Desktop/competetion.R')
+updateR()
+library(caret)
+x= 1:100
+y= 2x + 3
+y= (2*x) + 3
+y
+xbar= mean(x)
+ybar = mean(y)
+mean(x)
+mean(y)
+sd(x)
+sd(y)
+xdiff = x - mean(x)
+ydiff = y - mean(y)
+xydiffprod = sum(xdiff*ydiff)
+xydiffprod
+xdiff
+ydiff
+x= 1:100
+theta= (x*pi)/180
+xt = 5* cos(theta)
+xt = 5* sin(theta)
+mean(xt)
+mean(yt)
+sd(xt)
+sd(yt)
+sum(xt- mean(xt)* (yt- mean(yt)))/sd(xt)*sd(yt)
+sum(xt- mean(xt)* (yt- mean(yt)))
+xt = 5* cos(theta)
+yt = 5* sin(theta)
+mean(xt)
+mean(yt)
+sd(xt)
+sd(yt)
+sum(xt- mean(xt)* (yt- mean(yt)))
+b =sum(xt- mean(xt)* (yt- mean(yt)))
+b/sd(xt)*sd(yt)*99
+b/sd(xt)*sd(yt)*99
+plot(x,y)
+plot(xt,yt)
+cor(x,y)
+also find the relation coefficients(x)
+y<-c(1.4,1.8,2.1,2.3,2.6)
+cor(x,y)
+x<-c(2,4,8,8,9)
+y<-c(1.4,1.8,2.1,2.3,2.6)
+corr(x,y)
+cor(x,y)
+plot(x,y)
+line(x,y)
+abline(x,y)
+abline
+pnorm(2.17)
+dnorm(2.17)
+qnorm(2.17)
+install.packages("car")
+library(car)
+data("cars")
+str(cars)
+View(cars)
+s = 20
+sd = 53
+qchisq(0.005,19)
+n =10
+m = 11400
+sd = 700
+700/sqrt(10)
+qt(0.95,9)
+upper.limit = 11400 + (1.8331113)*(231.3594)
+lower.limit = 11400 - (1.8331113)*(231.3594)
+# question no 3
+qchisq(0.025,99)
+(99)*(0.14)^2
+n =6
+sd = 2.5
+mean= 14.1
+2.5/sqrt(6)
+qnorm(0.95,0,1)
+upper.limit = 14.1 + (1.644854)*(1.020621)
+lower.limit = 14.1 - (1.644854)*(1.020621)
+# question no 3.2
+n = 25
+mean = 300007
+sd = 10
+10/sqrt(25)
+upper.limit = 300007 + (1.644854)*(2)
+lower.limit = 300007 - (1.644854)*(2)
+# question no 3.3
+n = 25
+m = 0.910835
+sd = 45
+# question no 3.4
+n = 10
+m = 1.0002
+sd = 0.0001
+0.0001/sqrt(10)
+qt(0.05,9)
+upper.limit = 1.0002 + (1.833113)*(3.1622776601)
+lower.limit = 1.0002 - (1.833113)*(3.1622776601)
+# question no 3.5
+v7 = c(9.8,10.2,10.4,9.8,10.0,10.2,9.6)
+length(v7)
+mean(v7)
+sd(v7)
+0.2828427/sqrt(7)
+qt(0.075,6)
+upper.limit = 10 + (1.650173)*(0.2828427)
+lower.limit = 10 - (1.650173)*(0.2828427)
+# question no 3.6
+qnorm(0.975,0,1)
+sd = 40
+heat_generated = c(4.260,3.882,4.741,3.897,4.925,4.021,4.822,4.113,4.628,4.013,4.728,4.224,4.171,4.585,4.509,4.419)
+length(heat_generated)
+sd(heat_generated)
+qchisq(0.975,9)
+0.025*100
+lower.limit = 0.2532370431 # S.D
+# problem no 3.5
+x = c(9.8,10.2,10.4,9.8,10.0,10.2,9.6)
+# performing t- test
+t.test(x,conf.level = 0.85)
+# problem no 3.10
+x = c(0.8,1.3,1.5,1.7,1.7,1.8,2.0,2.0,2.2)
+# performing t - test
+t.test(x,conf.level = 0.95)
+# problem n0 3.14
+c = c(4.260,3.882,4.741,3.897,4.925,4.021,4.822,4.113,4.628,4.013,4.728,4.224,4.171,4.585,4.509,4.419)
+library("EnvStats")
+var = c(4.260,3.882,4.741,3.897,4.925,4.021,4.822,4.113,4.628,4.013,4.728,4.224,4.171,4.585,4.509,4.419)
+varTest(var)
+memory.limit()
+install.packages("conjoint")
+library("conjoint")
+data(tea)
+View(tlevn)
+View(tpref)
+View(tprefm)
+View(tsimp)
+View(tprof)
+View(tprefm)
+View(tpref)
+View(tlevn)
+View(tsimp)
+View(tlevn)
+View(tsimp)
+View(tlevn)
+View(tprof)
+View(tlevn)
+View(tlevn)
+View(tsimp)
+View(tprefm)
+View(tpref)
+View(tpref)
+View(tprefm)
+View(tprof)
+View(tprof)
+View(tprefm)
+caModel(y=tprefm[1,], x=tprof)
+caUtilities(y=tprefm[1,], x=tprof, z=tlevn)
+caUtilities(y=tprefm[1,], x=tprof, z=tlevn)
+head(caPartUtilities(y=tpref, x=tprof, z=tlevn))
+Conjoint(y=tpref, x=tprof, z=tlevn)
+data1 <- read.csv("C:\Users\Pankaj\Desktop\Sociocops\Tab_Villages.csv", header = T)
+data1 <- read.csv("C:\Users\Pankaj\Desktop\Sociocops\Tab_Villages.csv", header = TRUE)
+data1 <- read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab_Villages.csv", header = TRUE)
+data2 <-read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab.csv", header = TRUE)
+View(data1)
+View(data2)
+View(data1)
+colnames(data1$Tab.No) <- data1$Tab_No
+View(data1)
+data1 <- read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab_Villages.csv", header = TRUE)
+data2 <-read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab.csv", header = TRUE)
+colnames(data1$Tab.No) <- data1$Tab_No
+View(data1)
+colnames(data1$Tab.No) <- $Tab_No
+colnames(data1$Tab.No) <- Tab_No
+colnames(data1$Tab.No) <- "Tab_No"
+colnames(Tab.No) <- "Tab_No"
+colnames(Tab.No) <- 'Tab_No'
+colnames(data1$Tab.No) <- 'Tab_No'
+View(data1)
+data3 <- merge(data1, data2, all.data2 = TRUE)
+View(data3)
+data3 <- merge(data1, data2, by.data1 = data1$Tab.No, by.data2 = data2$Tab_No)
+data1 <- read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab_Villages.csv", header = TRUE)
+data2 <-read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab.csv", header = TRUE)
+colnames(data1$Tab.No) <- 'Tab_No'
+data3 <- merge(data1, data2, by.data1 = data1$Tab.No, by.data2 = data2$Tab_No)
+View(data3)
+data1 <- read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab_Villages.csv", header = TRUE)
+data2 <-read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab.csv", header = TRUE)
+data3 <- merge(data1, data2, by.data1 = data1$Tab.No, by.data2 = data2$Tab_No)
+data3 <- merge(data1, data2, by.data1 = "Tab.No", by.data2 = "Tab_No")
+data1 <- read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab_Villages.csv", header = TRUE)
+data2 <-read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab.csv", header = TRUE)
+data3 <- merge(data1, data2, by.data1 = "Tab.No", by.data2 = "Tab_No")
+View(data1)
+View(data2)
+data3 <- merge(data1, data2, by.data1 = "Tab.No", by.data2 = "Tab_No", all.data1 = True)
+data1 <- read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab_Villages.csv", header = TRUE)
+data2 <-read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab.csv", header = TRUE)
+data3 <- merge(data1, data2, by.data1 = "Tab.No", by.data2 = "Tab_No", all.data1 = True)
+data3 <- merge(data1, data2, by.data1 = "Tab.No", by.data2 = "Tab_No", all = True)
+data3 <- merge(data1, data2, by.data1 = "Tab.No", by.data2 = "Tab_No", all.data1 = T)
+data3 <- merge(data1, data2, by.data1 = "Tab.No", by.data2 = "Tab_No", all = T)
+View(data3)
+data3 <- merge(data1, data2, by.data1 = "Tab.No", by.data2 = "Tab_No", all.data2 = T)
+View(data3)
+data3 <- merge(data1, data2, by.data1 = "Tab.No", by.data2 = "Tab_No", all = T)
+data1 <- read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab_Villages.csv", header = TRUE)
+data2 <-read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab.csv", header = TRUE)
+for(x in 1:nrow(data2)){
+for (y in 1:nrow(data1)){
+if data2$Tab_No == data1$Tab.No{
+data1$Village.Name = data2$Village.Name
+}
+}
+}
+for(x in 1:nrow(data2)){
+for (y in 1:nrow(data1)){
+if (data2$Tab_No == data1$Tab.No){
+data1$Village.Name = data2$Village.Name
+}
+}
+}
+data1 <- read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab_Villages.csv", header = TRUE)
+data2 <-read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab.csv", header = TRUE)
+#data3 <- merge(data1, data2, by.data1 = "Tab.No", by.data2 = "Tab_No", all = T)
+for(x in 1:nrow(data2)){
+for (y in 1:nrow(data1)){
+if (data2$Tab_No == data1$Tab.No){
+data1$Village.Name = data2$Village.Name
+}
+}
+}
+data1 <- read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab_Villages.csv", header = TRUE)
+data2 <-read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab.csv", header = TRUE)
+for(x in 1:nrow(data1)){
+if(data1$Tab.No == data2$Tab_No){
+data1$Village.Name = data2$Village.Name
+}
+}
+View(data1)
+View(data2)
+data1 <- read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab_Villages.csv", header = TRUE)
+data2 <-read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab.csv", header = TRUE)
+#data3 <- merge(data1, data2, by.data1 = "Tab.No", by.data2 = "Tab_No", all = T)
+for(x in 1:nrow(data2)){
+for (y in 1:nrow(data1)){
+if (data2$Tab_No == data1$Tab.No){
+data1$Village.Name = data2$Village.Name
+}
+}
+}
+View(data1)
+View(data1)
+data1 <- fread("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab_Villages.csv", header = TRUE)
+library(lubridate)
+data1 <- fread("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab_Villages.csv", header = TRUE)
+data1 <- read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab_Villages.csv", header = TRUE)
+data2 <-read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab.csv", header = TRUE)
+names(data1)[2]="Tab_No"
+data1$Survey.Date<- lubridate::dmy(data1$Survey.Date)
+data2$Survey.Start.Date=lubridate::dmy(data2$Survey.Start.Date)
+data2$Survey.End.Date=lubridate::dmy(data2$Survey.End.Date)
+data1$AC.Name = as.character(data1$AC.Name)
+data1$Mandal.Name=as.character(data1$Mandal.Name)
+data2$AC.Name = as.character(data2$AC.Name)
+data2$Mandal.Name = as.character(data2$Mandal.Name)
+X_data=data1[data1$Tab_No %in% data2$Tab_No,]
+tab=unique(X_data$Tab_No)
+C=data.frame()
+for(i in tab){
+A=subset(X_data,X_data$Tab_No==i)
+B=subset(data2,data2$Tab_No==i)
+for(m in 1:nrow(A)){
+for(n in 1:nrow(B)){
+if(between(A$Survey.Date[m],B$Survey.Start.Date[n],B$Survey.End.Date[n],incbounds=TRUE)==TRUE){
+A$Village.Name[m]=B$Village.Name[n]
+A$Mandal.Name[m]=B$Mandal.Name[n]
+A$AC.Name[m]=B$AC.Name[n]
+}
+}
+}
+C=rbind(C,A)
+}
+X_data2=data1[!data1$Tab_No %in% data2$Tab_No,]
+D=rbind(C,X_data2)
+write.csv(D,"")
+table(is.na(D$Village.Name))
+View(D)
+library(lubridate)
+data1 <- read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab_Villages.csv", header = TRUE)
+data2 <-read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab.csv", header = TRUE)
+names(data1)[2]="Tab_No"
+data1$Survey.Date<- lubridate::dmy(data1$Survey.Date)
+data2$Survey.Start.Date=lubridate::dmy(data2$Survey.Start.Date)
+data2$Survey.End.Date=lubridate::dmy(data2$Survey.End.Date)
+data1$Village.Name=as.character(data1$Village.Name)
+data2$Village.Name=as.character(data2$Village.Name)
+data1$AC.Name = as.character(data1$AC.Name)
+data1$Mandal.Name=as.character(data1$Mandal.Name)
+data2$AC.Name = as.character(data2$AC.Name)
+data2$Mandal.Name = as.character(data2$Mandal.Name)
+X_data=data1[data1$Tab_No %in% data2$Tab_No,]
+tab=unique(X_data$Tab_No)
+C=data.frame()
+for(i in tab){
+A=subset(X_data,X_data$Tab_No==i)
+B=subset(data2,data2$Tab_No==i)
+for(m in 1:nrow(A)){
+for(n in 1:nrow(B)){
+if(between(A$Survey.Date[m],B$Survey.Start.Date[n],B$Survey.End.Date[n],incbounds=TRUE)==TRUE){
+A$Village.Name[m]=B$Village.Name[n]
+A$Mandal.Name[m]=B$Mandal.Name[n]
+A$AC.Name[m]=B$AC.Name[n]
+}
+}
+}
+C=rbind(C,A)
+}
+library(lubridate)
+data1 <- read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab_Villages.csv", header = TRUE)
+data2 <-read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab.csv", header = TRUE)
+names(data1)[2]="Tab_No"
+data1$Survey.Date<- lubridate::dmy(data1$Survey.Date)
+data2$Survey.Start.Date=lubridate::dmy(data2$Survey.Start.Date)
+data2$Survey.End.Date=lubridate::dmy(data2$Survey.End.Date)
+data1$Village.Name=as.character(data1$Village.Name)
+data2$Village.Name=as.character(data2$Village.Name)
+data1$AC.Name = as.character(data1$AC.Name)
+data1$Mandal.Name=as.character(data1$Mandal.Name)
+data2$AC.Name = as.character(data2$AC.Name)
+data2$Mandal.Name = as.character(data2$Mandal.Name)
+X_data=data1[data1$Tab_No %in% data2$Tab_No,]
+tab=unique(X_data$Tab_No)
+C=data.frame()
+for(i in tab){
+A=subset(X_data,X_data$Tab_No==i)
+B=subset(data2,data2$Tab_No==i)
+for(m in 1:nrow(A)){
+for(n in 1:nrow(B)){
+if(between(A$Survey.Date[m],B$Survey.Start.Date[n],B$Survey.End.Date[n],incbounds=TRUE)==TRUE){
+A$Village.Name[m]=B$Village.Name[n]
+A$Mandal.Name[m]=B$Mandal.Name[n]
+A$AC.Name[m]=B$AC.Name[n]
+}
+}
+}
+C=rbind(C,A)
+}
+X_data2=data1[!data1$Tab_No %in% data2$Tab_No,]
+D=rbind(C,X_data2)
+write.csv(D,"")
+table(is.na(D$Village.Name))
+View(D)
+library(lubridate)
+data2 <-read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab.csv", header = TRUE)
+library(lubridate)
+library("lubridate", lib.loc="~/R/win-library/3.2")
+data1 <- read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab_Villages.csv", header = TRUE)
+data2 <-read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab.csv", header = TRUE)
+names(data1)[2]="Tab_No"
+data1$Survey.Date<- lubridate::dmy(data1$Survey.Date)
+data2$Survey.Start.Date=lubridate::dmy(data2$Survey.Start.Date)
+data2$Survey.End.Date=lubridate::dmy(data2$Survey.End.Date)
+data1$Village.Name=as.character(data1$Village.Name)
+data2$Village.Name=as.character(data2$Village.Name)
+data1$AC.Name = as.character(data1$AC.Name)
+data1$Mandal.Name=as.character(data1$Mandal.Name)
+data2$AC.Name = as.character(data2$AC.Name)
+data2$Mandal.Name = as.character(data2$Mandal.Name)
+X_data=data1[data1$Tab_No %in% data2$Tab_No,]
+tab=unique(X_data$Tab_No)
+C=data.frame()
+for(i in tab){
+A=subset(X_data,X_data$Tab_No==i)
+B=subset(data2,data2$Tab_No==i)
+for(m in 1:nrow(A)){
+for(n in 1:nrow(B)){
+if(between(A$Survey.Date[m],B$Survey.Start.Date[n],B$Survey.End.Date[n],incbounds=TRUE)==TRUE){
+A$Village.Name[m]=B$Village.Name[n]
+A$Mandal.Name[m]=B$Mandal.Name[n]
+A$AC.Name[m]=B$AC.Name[n]
+}
+}
+}
+C=rbind(C,A)
+}
+library(data.table)
+library(lubridate)
+library(data.table)
+data1 <- read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab_Villages.csv", header = TRUE)
+data2 <-read.csv("C:\\Users\\Pankaj\\Desktop\\Sociocops\\Tab.csv", header = TRUE)
+names(data1)[2]="Tab_No"
+data1$Survey.Date<- lubridate::dmy(data1$Survey.Date)
+data2$Survey.Start.Date=lubridate::dmy(data2$Survey.Start.Date)
+data2$Survey.End.Date=lubridate::dmy(data2$Survey.End.Date)
+data1$Village.Name=as.character(data1$Village.Name)
+data2$Village.Name=as.character(data2$Village.Name)
+data1$AC.Name = as.character(data1$AC.Name)
+data1$Mandal.Name=as.character(data1$Mandal.Name)
+data2$AC.Name = as.character(data2$AC.Name)
+data2$Mandal.Name = as.character(data2$Mandal.Name)
+X_data=data1[data1$Tab_No %in% data2$Tab_No,]
+tab=unique(X_data$Tab_No)
+C=data.frame()
+for(i in tab){
+A=subset(X_data,X_data$Tab_No==i)
+B=subset(data2,data2$Tab_No==i)
+for(m in 1:nrow(A)){
+for(n in 1:nrow(B)){
+if(between(A$Survey.Date[m],B$Survey.Start.Date[n],B$Survey.End.Date[n],incbounds=TRUE)==TRUE){
+A$Village.Name[m]=B$Village.Name[n]
+A$Mandal.Name[m]=B$Mandal.Name[n]
+A$AC.Name[m]=B$AC.Name[n]
+}
+}
+}
+C=rbind(C,A)
+}
+X_data2=data1[!data1$Tab_No %in% data2$Tab_No,]
+D=rbind(C,X_data2)
+write.csv(D,"")
+table(is.na(D$Village.Name))
+View(X_data2)
+View(X_data2)
+install.packages("e1071")
+install.packages("e1071")
+library("e1071", lib.loc="~/R/win-library/3.2")
+install.packages("Metrics")
+rm(list = ls())
+setwd("D:/Pankaj_Docs/DJO_Ver1.18-Server Versionwith Login - New Data - Weekly - Progress Bar Without Quarterly")
+shiny::runApp()
+install.packages("shinyBS")
+library(shinyBS)
+runApp()
+install.packages("shinythemes")
+library(shinythemes)
+library(Shinythemes)
+install.packages("shinythemes")
+library(Shinythemes)

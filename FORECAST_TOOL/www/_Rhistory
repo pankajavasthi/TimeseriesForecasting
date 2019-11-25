@@ -1,0 +1,512 @@
+test.html <- read_html(remDr$getPageSource()[[1]])
+k1=900
+site <- paste('https://www.tripadvisor.in/Hotel_Review-g304551-d301777-Reviews-or',k1,'-ITC_Maurya_New_Delhi-New_Delhi_National_Capital_Territory_of_Delhi.html',sep="")
+startServer()
+remDr <- remoteDriver()
+remDr$open(silent = TRUE)
+remDr$navigate(site) # navigates to webpage
+wxbutton <- remDr$findElement(using = 'class', "ulBlueLinks")
+wxbutton$clickElement()
+test.html <- read_html(remDr$getPageSource()[[1]])
+test.html <- read_html(remDr$getPageSource()[[1]])
+library("rvest")
+library("RSelenium")
+library("XML")
+k1=950
+site <- paste('https://www.tripadvisor.in/Hotel_Review-g304551-d301777-Reviews-or',k1,'-ITC_Maurya_New_Delhi-New_Delhi_National_Capital_Territory_of_Delhi.html',sep="")
+startServer()
+remDr <- remoteDriver()
+remDr$open(silent = TRUE)
+remDr$navigate(site) # navigates to webpage
+wxbutton <- remDr$findElement(using = 'class', "ulBlueLinks")
+wxbutton <- remDr$findElement(using = 'class', "ulBlueLinks")
+wxbutton$clickElement()
+test.html <- read_html(remDr$getPageSource()[[1]])
+library("rvest")
+library("RSelenium")
+library("XML")
+k1=950
+site <- paste('https://www.tripadvisor.in/Hotel_Review-g304551-d301777-Reviews-or',k1,'-ITC_Maurya_New_Delhi-New_Delhi_National_Capital_Territory_of_Delhi.html',sep="")
+startServer()
+remDr <- remoteDriver()
+remDr$open(silent = TRUE)
+remDr$navigate(site) # navigates to webpage
+wxbutton <- remDr$findElement(using = 'class', "ulBlueLinks")
+wxbutton$clickElement()
+test.html <- read_html(remDr$getPageSource()[[1]])
+test.html <- read_html(remDr$getPageSource()[[1]])
+test.html <- read_html(remDr$getPageSource()[[1]])
+library(plyr)
+data=read.csv("D:\\Samurai\\Team Health\\Code Backups\\Output Validation\\Sum\\WildCardOutput 02032017.csv")
+View(data)
+data1=ddply(total, .(data$FileName), summarise, MatchCount = sum(TrueCount))
+ddply(data, .(FileName), summarise, MatchCount = sum(TrueCount))
+xx=ddply(data, .(FileName), summarise, MatchCount = sum(TrueCount))
+View(xx)
+write.csv(xx,"D:\\Samurai\\Team Health\\Code Backups\\Output Validation\\Sum\\output.csv")
+library(plyr)
+data=read.csv("D:\\Samurai\\Team Health\\Code Backups\\Output Validation\\Sum\\WildCardOutput 02032017.csv")
+xx=ddply(data, .(FileName,RelevantImpressionStatement), summarise, MatchCount = sum(TrueCount))
+View(xx)
+write.csv(xx,"D:\\Samurai\\Team Health\\Code Backups\\Output Validation\\Sum\\output1.csv")
+View(data)
+xx=ddply(data, .(FileName,RelevantImpressionStatement), summarise, MatchCount = sum(TrueCount),MaxScore = max(ConfidenceScore_new))
+View(xx)
+write.csv(xx,"D:\\Samurai\\Team Health\\Code Backups\\Output Validation\\Sum\\output2.csv")
+xx=ddply(data, .(FileName,RelevantImpressionStatement), summarise, MatchCount = sum(TrueCount),MaxScore = max(ConfidenceScore_new),MinScore = min(ConfidenceScore_new))
+write.csv(xx,"D:\\Samurai\\Team Health\\Code Backups\\Output Validation\\Sum\\output3.csv")
+xx1=ddply(data, .(FileName,RelevantImpressionStatement,ConfidenceScore_new), summarise, MatchCount = count(ConfidenceScore_new))
+xx1=ddply(data, .(FileName,RelevantImpressionStatement,ConfidenceScore_new), summarise, MaxScore = count(FileName))
+xx1=ddply(data, .(RelevantImpressionStatement,ConfidenceScore_new), summarise, MaxScore = count(FileName))
+xx1=ddply(data, .(RelevantImpressionStatement,ConfidenceScore_new), summarise, MaxScore = count(FileName))
+library(sqldf)
+install.packages("sqldf")
+library(sqldf)
+data1=sqldf("select top 10 from data")
+data1=sqldf("select TOP 10 from data")
+data1=sqldf("select * from data")
+data1=sqldf("select FileName,RelevantImpressionStatement, count(code) from data where FileName='5023618662' ")
+View(data1)
+data1=sqldf("select FileName,RelevantImpressionStatement, count(code) from data where FileName='5023618662' group by FileName,RelevantImpressionStatement")
+View(data1)
+data1=sqldf("select FileName,RelevantImpressionStatement, count(distinct(code)) from data where FileName='5023618662' group by FileName,RelevantImpressionStatement")
+View(data1)
+View(data1)
+temp=sqldf("select FileName,RelevantImpressionStatement, count(distinct(code)) from data where FileName='5023618662' group by FileName,RelevantImpressionStatement")
+distinctCode=sqldf("select FileName,RelevantImpressionStatement, count(distinct(code)) from data group by FileName,RelevantImpressionStatement")
+View(temp)
+temp=sqldf("select FileName,RelevantImpressionStatement, count(distinct(code)) from data where FileName='5023618662',TrueCount=1 group by FileName,RelevantImpressionStatement")
+temp=sqldf("select FileName,RelevantImpressionStatement, count(distinct(code)) from data where FileName='5023618662' and TrueCount=1 group by FileName,RelevantImpressionStatement")
+View(temp)
+temp=sqldf("select FileName,RelevantImpressionStatement, count(distinct(code)),max(ConfidenceScore_new) from data where FileName='5023618662' and TrueCount=1 group by FileName,RelevantImpressionStatement")
+View(temp)
+View(temp)
+MatchedScore=sqldf("select FileName,RelevantImpressionStatement, count(distinct(code)),max(ConfidenceScore_new) from data where TrueCount=1 group by FileName,RelevantImpressionStatement")
+View(MatchedScore)
+write.csv(distinctCode,"D:\\Samurai\\Team Health\\Code Backups\\Output Validation\\Sum\\distinctCode.csv")
+write.csv(MatchedScore,"D:\\Samurai\\Team Health\\Code Backups\\Output Validation\\Sum\\MatchedScore.csv")
+View(data)
+temp=sqldf("select FileName,RelevantImpressionStatement, count(distinct(code)) from data where FileName='07107877_889325821_09-27-2016_09-27-2016_OHM1_ED' group by FileName,RelevantImpressionStatement")
+View(temp)
+temp1=sqldf("select FileName,RelevantImpressionStatement, count(distinct(code)),max(ConfidenceScore_new) from data where FileName='07107877_889325821_09-27-2016_09-27-2016_OHM1_ED' and TrueCount=1 group by FileName,RelevantImpressionStatement")
+View(temp1)
+View(temp1)
+temp1=sqldf("select FileName,RelevantImpressionStatement,code, count(distinct(code)),max(ConfidenceScore_new) from data where FileName='07107877_889325821_09-27-2016_09-27-2016_OHM1_ED' and TrueCount=1 group by FileName,RelevantImpressionStatement,code")
+View(temp1)
+MatchedScore=sqldf("select FileName,RelevantImpressionStatement,code, count(distinct(code)),max(ConfidenceScore_new) from data where TrueCount=1 group by FileName,RelevantImpressionStatement,code")
+write.csv(MatchedScore,"D:\\Samurai\\Team Health\\Code Backups\\Output Validation\\Sum\\MatchedScore.csv")
+MatchedScore1=sqldf("select FileName,RelevantImpressionStatement, count(distinct(code)),max(ConfidenceScore_new) from data where TrueCount=1 group by FileName,RelevantImpressionStatement")
+write.csv(MatchedScore1,"D:\\Samurai\\Team Health\\Code Backups\\Output Validation\\Sum\\MatchedScore1.csv")
+MaxScore=sqldf("select FileName, RelevantImpressionStatement, max(ConfidenceScore_new) from data group by FileName,RelevantImpressionStatement")
+View(MaxScore)
+write.csv(MaxScore,"D:\\Samurai\\Team Health\\Code Backups\\Output Validation\\Sum\\MaxScore.csv")
+Impressions=sqldf("select FileName, count(RelevantImpressionStatement) from data group by FileName")
+View(Impressions)
+Impressions=sqldf("select FileName, count(distinct(RelevantImpressionStatement)) from data group by FileName")
+View(Impressions)
+write.csv(Impressions,"D:\\Samurai\\Team Health\\Code Backups\\Output Validation\\Sum\\Impressions.csv")
+MatchedCodes=sqldf("select FileName, count(distinct(code)) from data where TrueCount=1 group by FileName")
+write.csv(MatchedCodes,"D:\\Samurai\\Team Health\\Code Backups\\Output Validation\\Sum\\Impressions.csv")
+MaxScore=sqldf("select FileName, RelevantImpressionStatement, max(ConfidenceScore_new),min(ConfidenceScore_new) from data where='NVSUN_PD_D00114354222' and RelevantImpressionStatement='abdominal pain' group by FileName,RelevantImpressionStatement")
+MaxScore=sqldf("select FileName, RelevantImpressionStatement, max(ConfidenceScore_new),min(ConfidenceScore_new) from data where FileName='NVSUN_PD_D00114354222' and RelevantImpressionStatement='abdominal pain' group by FileName,RelevantImpressionStatement")
+View(MaxScore)
+sqldf("select FileName, RelevantImpressionStatement, code, ConfidenceScore_new from data where FileName='NVSUN_PD_D00114354222' and RelevantImpressionStatement='abdominal pain' group by FileName,RelevantImpressionStatement,code, ConfidenceScore_new")
+View(sqldf("select FileName, RelevantImpressionStatement, code, ConfidenceScore_new from data where FileName='NVSUN_PD_D00114354222' and RelevantImpressionStatement='abdominal pain' group by FileName,RelevantImpressionStatement,code, ConfidenceScore_new"))
+View(sqldf("select FileName, RelevantImpressionStatement, distinct(code) from data where FileName='NVSUN_PD_D00114354222' and RelevantImpressionStatement='abdominal pain' group by FileName,RelevantImpressionStatement"))
+View(sqldf("select FileName, RelevantImpressionStatement, distinct(code) from data where FileName='NVSUN_PD_D00114354222' and RelevantImpressionStatement='abdominal pain' group by FileName,RelevantImpressionStatement"))
+View(sqldf("select FileName, RelevantImpressionStatement, (code) from data where FileName='NVSUN_PD_D00114354222' and RelevantImpressionStatement='abdominal pain' group by FileName,RelevantImpressionStatement"))
+View(sqldf("select FileName, RelevantImpressionStatement, code from data where FileName='NVSUN_PD_D00114354222' and RelevantImpressionStatement='abdominal pain' group by FileName,RelevantImpressionStatement"))
+View(sqldf("select FileName, RelevantImpressionStatement, code from data where FileName='NVSUN_PD_D00114354222' and RelevantImpressionStatement='abdominal pain' group by FileName,RelevantImpressionStatement,code"))
+View(sqldf("select FileName, RelevantImpressionStatement, code,ConfidenceScore_new from data where FileName='NVSUN_PD_D00114354222' and RelevantImpressionStatement='abdominal pain' group by FileName,RelevantImpressionStatement,code"))
+library(rvest)
+library("RSelenium")
+library("XML")
+site <- "https://www.tripadvisor.in/Hotel_Review-g304551-d301777-Reviews-ITC_Maurya_New_Delhi-New_Delhi_National_Capital_Territory_of_Delhi.html"
+startServer()
+remDr <- remoteDriver()
+remDr$open()
+site <- "https://www.tripadvisor.in/Hotel_Review-g304551-d301777-Reviews-ITC_Maurya_New_Delhi-New_Delhi_National_Capital_Territory_of_Delhi.html"
+startServer()
+remDr <- remoteDriver()
+remDr$open()
+remDr$navigate(site) # navigates to webpage
+wxbutton <- remDr$findElement(using = 'class', "ulBlueLinks")
+wxbutton$clickElement()
+test.html <- read_html(remDr$getPageSource()[[1]])
+results<-test.html %>%
+html_nodes(".entry") %>%
+html_text(trim=TRUE)
+x<- data.frame(results, stringsAsFactors = FALSE) #### %>% View()
+x1 <- x
+k=10
+ll=2
+for(i in ll:50)
+{
+site <- paste('https://www.tripadvisor.in/Hotel_Review-g304551-d301777-Reviews-or',k,'-ITC_Maurya_New_Delhi-New_Delhi_National_Capital_Territory_of_Delhi.html',sep="")
+remDr$navigate(site) # navigates to webpage
+Sys.sleep(30)
+# Code to click on Predit Button
+wxbutton <- remDr$findElement(using = 'class', "ulBlueLinks")
+Sys.sleep(5)
+wxbutton$clickElement()
+Sys.sleep(30)
+test.html1 <- read_html(remDr$getPageSource()[[1]])
+results<-test.html1 %>%
+html_nodes(".entry") %>%
+html_text(trim=TRUE)
+x<- data.frame(results, stringsAsFactors = FALSE) #### %>% View()
+x1<-rbind(x1,x)
+k=k+10
+ll=i
+}
+ll=2
+for(i in ll:50)
+{
+site <- paste('https://www.tripadvisor.in/Hotel_Review-g304551-d301777-Reviews-or',k,'-ITC_Maurya_New_Delhi-New_Delhi_National_Capital_Territory_of_Delhi.html',sep="")
+remDr$navigate(site) # navigates to webpage
+Sys.sleep(30)
+# Code to click on Predit Button
+wxbutton <- remDr$findElement(using = 'class', "ulBlueLinks")
+Sys.sleep(5)
+wxbutton$clickElement()
+Sys.sleep(30)
+test.html1 <- read_html(remDr$getPageSource()[[1]])
+results<-test.html1 %>%
+html_nodes(".entry") %>%
+html_text(trim=TRUE)
+x<- data.frame(results, stringsAsFactors = FALSE) #### %>% View()
+x1<-rbind(x1,x)
+k=k+10
+ll=i
+}
+View(x1)
+k=1500
+#x<-read.csv(
+ll=150
+for(i in ll:200)
+{
+site <- paste('https://www.tripadvisor.in/Hotel_Review-g304551-d301777-Reviews-or',k,'-ITC_Maurya_New_Delhi-New_Delhi_National_Capital_Territory_of_Delhi.html',sep="")
+remDr$navigate(site) # navigates to webpage
+Sys.sleep(30)
+# Code to click on Predit Button
+wxbutton <- remDr$findElement(using = 'class', "ulBlueLinks")
+Sys.sleep(5)
+wxbutton$clickElement()
+Sys.sleep(30)
+test.html1 <- read_html(remDr$getPageSource()[[1]])
+results<-test.html1 %>%
+html_nodes(".entry") %>%
+html_text(trim=TRUE)
+x<- data.frame(results, stringsAsFactors = FALSE) #### %>% View()
+x1<-rbind(x1,x)
+k=k+10
+ll=i
+}
+write.csv(x1,"D:\\ITC_07032017.csv")
+library(rvest)
+library("RSelenium")
+library("XML")
+startServer()
+remDr <- remoteDriver()
+remDr$open()
+for(i in ll:224)
+{
+site <- paste('https://www.tripadvisor.in/Hotel_Review-g304551-d301777-Reviews-or',k,'-ITC_Maurya_New_Delhi-New_Delhi_National_Capital_Territory_of_Delhi.html',sep="")
+remDr$navigate(site) # navigates to webpage
+Sys.sleep(30)
+# Code to click on Predit Button
+wxbutton <- remDr$findElement(using = 'class', "ulBlueLinks")
+Sys.sleep(5)
+wxbutton$clickElement()
+Sys.sleep(30)
+test.html1 <- read_html(remDr$getPageSource()[[1]])
+results<-test.html1 %>%
+html_nodes(".entry") %>%
+html_text(trim=TRUE)
+x<- data.frame(results, stringsAsFactors = FALSE) #### %>% View()
+x1<-rbind(x1,x)
+k=k+10
+ll=i
+}
+k=1000
+write.csv(x1,"D:\\ITC_07032017.csv")
+ll=100
+for(i in ll:150)
+{
+site <- paste('https://www.tripadvisor.in/Hotel_Review-g304551-d301777-Reviews-or',k,'-ITC_Maurya_New_Delhi-New_Delhi_National_Capital_Territory_of_Delhi.html',sep="")
+remDr$navigate(site) # navigates to webpage
+Sys.sleep(30)
+# Code to click on Predit Button
+wxbutton <- remDr$findElement(using = 'class', "ulBlueLinks")
+Sys.sleep(5)
+wxbutton$clickElement()
+Sys.sleep(30)
+test.html1 <- read_html(remDr$getPageSource()[[1]])
+results<-test.html1 %>%
+html_nodes(".entry") %>%
+html_text(trim=TRUE)
+x<- data.frame(results, stringsAsFactors = FALSE) #### %>% View()
+x1<-rbind(x1,x)
+k=k+10
+ll=i
+}
+startServer()
+remDr <- remoteDriver()
+remDr$open()
+ll=100
+for(i in ll:150)
+{
+site <- paste('https://www.tripadvisor.in/Hotel_Review-g304551-d301777-Reviews-or',k,'-ITC_Maurya_New_Delhi-New_Delhi_National_Capital_Territory_of_Delhi.html',sep="")
+remDr$navigate(site) # navigates to webpage
+Sys.sleep(30)
+# Code to click on Predit Button
+wxbutton <- remDr$findElement(using = 'class', "ulBlueLinks")
+Sys.sleep(5)
+wxbutton$clickElement()
+Sys.sleep(30)
+test.html1 <- read_html(remDr$getPageSource()[[1]])
+results<-test.html1 %>%
+html_nodes(".entry") %>%
+html_text(trim=TRUE)
+x<- data.frame(results, stringsAsFactors = FALSE) #### %>% View()
+x1<-rbind(x1,x)
+k=k+10
+ll=i
+}
+write.csv(x1,"D:\\ITC_07032017.csv")
+library(sqldf)
+library(dplyr)
+library(plotly)
+month <- c('2016-06',	'2016-07', '2016-08',	'2016-09',	'2016-10',	'2016-11',	'2016-12',	'2017-01',	'2017-02')
+brand1 <- c(190912,	147231,	150861,	145650,	131264,	133099,	129029,	90424,	129863)
+brand2 <- c(247449,	219758,	227075,	214874,	222650,	196118,	193907,	166805,	202528)
+brand3 <- c(124519,	115100,	134568,	166799,	194982,	194170,	191276,	144167,	138694)
+brand4 <- c(286525,	295310,	272052,	239755,	260449,	243047,	247655,	213330,	249255)
+brand5 <- c(150457,	144621,	130527,	145291,	150316,	142459,	119767,	111246,	136701)
+data <- data.frame(month, brand1, brand2, brand3, brand4, brand5)
+#The default order will be alphabetized unless specified as below:
+data$month <- factor(data$month, levels = data[["month"]])
+salesmonth <- plot_ly(data, x = ~month, y = ~brand1, name = 'SCOTT', type = 'scatter', mode = 'lines',
+line = list(color = 'rgb(205, 12, 24)', width = 4)) %>%
+add_trace(y = ~brand2, name = 'PERFORMANCE', line = list(color = 'rgb(22, 96, 167)', width = 4)) %>%
+add_trace(y = ~brand3, name = 'RANGER', line = list(color = 'rgb(205, 12, 24)', width = 4, dash = 'dash')) %>%
+add_trace(y = ~brand4, name = 'KATY', line = list(color = 'rgb(22, 96, 167)', width = 4, dash = 'dash')) %>%
+add_trace(y = ~brand5, name = 'WINNER', line = list(color = 'rgb(205, 12, 24)', width = 4, dash = 'dot')) %>%
+layout(title = "Sales by Channel for top 5 brands",
+xaxis = list(title = "Months"),
+yaxis = list (title = "Sales"))
+salesmonth
+plot_ly(data, x = ~month, y = ~brand1, name = 'SCOTT', type = 'scatter', mode = 'lines',
+line = list(color = 'rgb(205, 12, 24)', width = 4)) %>%
+add_trace(y = ~brand2, name = 'PERFORMANCE', line = list(color = 'rgb(22, 96, 167)', width = 4)) %>%
+add_trace(y = ~brand3, name = 'RANGER', line = list(color = 'rgb(205, 12, 24)', width = 4, dash = 'dash')) %>%
+add_trace(y = ~brand4, name = 'KATY', line = list(color = 'rgb(22, 96, 167)', width = 4, dash = 'dash')) %>%
+add_trace(y = ~brand5, name = 'WINNER', line = list(color = 'rgb(205, 12, 24)', width = 4, dash = 'dot')) %>%
+layout(title = "Sales by Channel for top 5 brands",
+xaxis = list(title = "Months"),
+yaxis = list (title = "Sales"))
+plot_ly(data, x = ~month, y = ~brand1, name = 'SCOTT', type = 'scatter', mode = 'lines',
+line = list(color = 'rgb(205, 12, 24)', width = 4)) %>%
+add_trace(y = ~brand2, name = 'PERFORMANCE', line = list(color = 'rgb(22, 96, 167)', width = 4)) %>%
+add_trace(y = ~brand3, name = 'RANGER', line = list(color = 'rgb(205, 12, 24)', width = 4, dash = 'dash')) %>%
+add_trace(y = ~brand4, name = 'KATY', line = list(color = 'rgb(22, 96, 167)', width = 4, dash = 'dash')) %>%
+add_trace(y = ~brand5, name = 'WINNER', line = list(color = 'rgb(205, 12, 24)', width = 4, dash = 'dot')) %>%
+layout(title = "Sales by Channel for top 5 brands",
+xaxis = list(title = "Months"),
+yaxis = list (title = "Sales"))
+salesmonth <- c(plot_ly(data, x = ~month, y = ~brand1, name = 'SCOTT', type = 'scatter', mode = 'lines',
+line = list(color = 'rgb(205, 12, 24)', width = 4)) %>%
+add_trace(y = ~brand2, name = 'PERFORMANCE', line = list(color = 'rgb(22, 96, 167)', width = 4)) %>%
+add_trace(y = ~brand3, name = 'RANGER', line = list(color = 'rgb(205, 12, 24)', width = 4, dash = 'dash')) %>%
+add_trace(y = ~brand4, name = 'KATY', line = list(color = 'rgb(22, 96, 167)', width = 4, dash = 'dash')) %>%
+add_trace(y = ~brand5, name = 'WINNER', line = list(color = 'rgb(205, 12, 24)', width = 4, dash = 'dot')) %>%
+layout(title = "Sales by Channel for top 5 brands",
+xaxis = list(title = "Months"),
+yaxis = list (title = "Sales")))
+salesmonth
+salesmonth <- plot_ly(c(data, x = ~month, y = ~brand1, name = 'SCOTT', type = 'scatter', mode = 'lines',
+line = list(color = 'rgb(205, 12, 24)', width = 4)) %>%
+add_trace(y = ~brand2, name = 'PERFORMANCE', line = list(color = 'rgb(22, 96, 167)', width = 4)) %>%
+add_trace(y = ~brand3, name = 'RANGER', line = list(color = 'rgb(205, 12, 24)', width = 4, dash = 'dash')) %>%
+add_trace(y = ~brand4, name = 'KATY', line = list(color = 'rgb(22, 96, 167)', width = 4, dash = 'dash')) %>%
+add_trace(y = ~brand5, name = 'WINNER', line = list(color = 'rgb(205, 12, 24)', width = 4, dash = 'dot')) %>%
+layout(title = "Sales by Channel for top 5 brands",
+xaxis = list(title = "Months"),
+yaxis = list (title = "Sales")))
+salesmonth
+version
+install.packages("installr")
+library(installr)
+library(sqldf)
+library(dplyr)
+library(plotly)
+topBrands <- plot_ly(
+x = factor(top5Brands$Product.Brand),
+y = factor(top5Brands$Sales),
+name = "Top Brands",
+type = "bar"
+)
+month <- c('2016-06',	'2016-07', '2016-08',	'2016-09',	'2016-10',	'2016-11',	'2016-12',	'2017-01',	'2017-02')
+brand1 <- c(190912,	147231,	150861,	145650,	131264,	133099,	129029,	90424,	129863)
+brand2 <- c(247449,	219758,	227075,	214874,	222650,	196118,	193907,	166805,	202528)
+brand3 <- c(124519,	115100,	134568,	166799,	194982,	194170,	191276,	144167,	138694)
+brand4 <- c(286525,	295310,	272052,	239755,	260449,	243047,	247655,	213330,	249255)
+brand5 <- c(150457,	144621,	130527,	145291,	150316,	142459,	119767,	111246,	136701)
+data <- data.frame(month, brand1, brand2, brand3, brand4, brand5)
+#The default order will be alphabetized unless specified as below:
+data$month <- factor(data$month, levels = data[["month"]])
+salesmonth <- plot_ly(data, x = ~month, y = ~brand1, name = 'SCOTT', type = 'scatter', mode = 'lines',
+line = list(color = 'rgb(205, 12, 24)', width = 4)) %>%
+add_trace(y = ~brand2, name = 'PERFORMANCE', line = list(color = 'rgb(22, 96, 167)', width = 4)) %>%
+add_trace(y = ~brand3, name = 'RANGER', line = list(color = 'rgb(205, 12, 24)', width = 4, dash = 'dash')) %>%
+add_trace(y = ~brand4, name = 'KATY', line = list(color = 'rgb(22, 96, 167)', width = 4, dash = 'dash')) %>%
+add_trace(y = ~brand5, name = 'WINNER', line = list(color = 'rgb(205, 12, 24)', width = 4, dash = 'dot')) %>%
+layout(title = "Sales by Channel for top 5 brands",
+xaxis = list(title = "Months"),
+yaxis = list (title = "Sales"))
+salesmonth
+sessionInfo()
+library(plotly)
+month <- c('2016-06',	'2016-07', '2016-08',	'2016-09',	'2016-10',	'2016-11',	'2016-12',	'2017-01',	'2017-02')
+brand1 <- c(190912,	147231,	150861,	145650,	131264,	133099,	129029,	90424,	129863)
+brand2 <- c(247449,	219758,	227075,	214874,	222650,	196118,	193907,	166805,	202528)
+brand3 <- c(124519,	115100,	134568,	166799,	194982,	194170,	191276,	144167,	138694)
+brand4 <- c(286525,	295310,	272052,	239755,	260449,	243047,	247655,	213330,	249255)
+brand5 <- c(150457,	144621,	130527,	145291,	150316,	142459,	119767,	111246,	136701)
+data <- data.frame(month, brand1, brand2, brand3, brand4, brand5)
+#The default order will be alphabetized unless specified as below:
+data$month <- factor(data$month, levels = data[["month"]])
+salesmonth <- plot_ly(data, x = ~month, y = ~brand1, name = 'SCOTT', type = 'scatter', mode = 'lines',
+line = list(color = 'rgb(205, 12, 24)', width = 4)) %>%
+add_trace(y = ~brand2, name = 'PERFORMANCE', line = list(color = 'rgb(22, 96, 167)', width = 4)) %>%
+add_trace(y = ~brand3, name = 'RANGER', line = list(color = 'rgb(205, 12, 24)', width = 4, dash = 'dash')) %>%
+add_trace(y = ~brand4, name = 'KATY', line = list(color = 'rgb(22, 96, 167)', width = 4, dash = 'dash')) %>%
+add_trace(y = ~brand5, name = 'WINNER', line = list(color = 'rgb(205, 12, 24)', width = 4, dash = 'dot')) %>%
+layout(title = "Sales by Channel for top 5 brands",
+xaxis = list(title = "Months"),
+yaxis = list (title = "Sales"))
+salesmonth
+salesmonth
+library(plotly)
+x <- c(1:100)
+random_y <- rnorm(100, mean = 0)
+data <- data.frame(x, random_y)
+p <- plot_ly(data, x = ~x, y = ~random_y, type = 'scatter', mode = 'lines')
+p
+p <- plot_ly(midwest, x = ~percollege, color = ~state, type = "box")
+p
+library(plotly)
+p <- plot_ly(midwest, x = ~percollege, color = ~state, type = "box")
+p
+View(p)
+library(plotly)
+set.seed(100)
+d <- diamonds[sample(nrow(diamonds), 1000), ]
+plot_ly(d, x = ~carat, y = ~price, color = ~carat,
+size = ~carat, text = ~paste("Clarity: ", clarity))
+d <- diamonds[sample(nrow(diamonds), 1000), ]
+plot_ly(d, x = ~carat, y = ~price, color = ~carat,
+size = ~carat, text = ~paste("Clarity: ", clarity))
+d <- diamonds[sample(nrow(diamonds), 1000), ]
+plot_ly(d, x = ~carat, y = ~price, color = ~carat,
+size = ~carat, text = ~paste("Clarity: ", clarity))
+dsamp <- diamonds[sample(nrow(diamonds), 1000), ]
+p <- qplot(carat, price, data=dsamp, colour=clarity)
+p <- ggplotly(p)
+p
+p <- qplot(speed, dist, data=cars)
+p <- p + geom_smooth(method = "glm", formula = y~x, family = gaussian(link = 'log'))
+p <- ggplotly(p)
+library(plotly)
+p
+library("plotly", lib.loc="C:/Program Files/R/R-3.3.3/library")
+install.packages(c("ggplot2", "plotly"))
+library(plotly)
+x <- c(1:100)
+random_y <- rnorm(100, mean = 0)
+data <- data.frame(x, random_y)
+p <- plot_ly(data, x = ~x, y = ~random_y, type = 'scatter', mode = 'lines')
+p
+month <- c('2016-06',     '2016-07', '2016-08',         '2016-09',             '2016-10',             '2016-11',             '2016-12',             '2017-01',         '2017-02')
+brand1 <- c(190912,        147231, 150861, 145650, 131264, 133099, 129029, 90424,   129863)
+brand2 <- c(247449,        219758, 227075, 214874, 222650, 196118, 193907, 166805, 202528)
+brand3 <- c(124519,        115100, 134568, 166799, 194982, 194170, 191276, 144167, 138694)
+brand4 <- c(286525,        295310, 272052, 239755, 260449, 243047, 247655, 213330, 249255)
+brand5 <- c(150457,        144621, 130527, 145291, 150316, 142459, 119767, 111246, 136701)
+data <- data.frame(month, brand1, brand2, brand3, brand4, brand5)
+#The default order will be alphabetized unless specified as below:
+data$month <- factor(data$month, levels = data[["month"]])
+salesmonth <- plot_ly(data, x = ~month, y = ~brand1, name = 'SCOTT', type = 'scatter', mode = 'lines',
+line = list(color = 'rgb(205, 12, 24)', width = 4)) %>%
+add_trace(y = ~brand2, name = 'PERFORMANCE', line = list(color = 'rgb(22, 96, 167)', width = 4)) %>%
+add_trace(y = ~brand3, name = 'RANGER', line = list(color = 'rgb(205, 12, 24)', width = 4, dash = 'dash')) %>%
+add_trace(y = ~brand4, name = 'KATY', line = list(color = 'rgb(22, 96, 167)', width = 4, dash = 'dash')) %>%
+add_trace(y = ~brand5, name = 'WINNER', line = list(color = 'rgb(205, 12, 24)', width = 4, dash = 'dot')) %>%
+layout(title = "Sales by Channel for top 5 brands",
+xaxis = list(title = "Months"),
+yaxis = list (title = "Sales"))
+salesmonth
+df <- data.frame(Name=c('John Smith', 'John Smith', 'Jeff Smith'),
+State=c('MI','WI','WI'), stringsAsFactors=F)
+View(df)
+df <- within(df, Name[Name == 'John Smith' & State == 'WI'] <- 'John Smith1')
+View(df)
+df <- data.frame(Name=c('John Smith', 'John Smith', 'Jeff Smith'),
+State=c('MI','WI','WI'), stringsAsFactors=F)
+View(df)
+df <- within(df, Name[Name == 'John Smith' & State == 'WI'] <- 'John Smith1')
+View(df)
+setwd("D:\\Samurai\\DJO")
+load("Updated R.Rdata.rData")
+setwd("D:\\Samurai\\DJO")
+load("Updated R.Rdata.rData")
+library(sqldf)
+library(dplyr)
+library(plotly)
+top5Brands=sqldf("select [Product.Brand], sum([Net.Sales.Amt]) as Sales from subset3  where [Product.Brand] not in ('DR COMFORT','SHAPE TO FIT') group by [Product.Brand] order by sum([Net.Sales.Amt]) desc LIMIT 5")
+top5Brands
+topBrands <- plot_ly(
+x = factor(top5Brands$Product.Brand),
+y = factor(top5Brands$Sales),
+name = "Top Brands",
+type = "bar"
+)
+topBrands
+x
+library(shiny)
+library(shinyIncubator)
+library(shinythemes),
+library(lubridate),
+library(zoo),
+library(timeDate),
+library(forecast),
+library(knitr),
+library(reshape),
+library(DT),
+library(RColorBrewer),
+library(googleVis),
+library(BreakoutDetection),
+library(xts),
+library(dygraphs),
+library(magrittr),
+library(rmarkdown)))
+shiny::runApp('D:/Samurai/R/DJO')
+forecastData<- readRDS("data/forecast.rds")
+setwd("D:\Samurai\R\DJO\www")
+setwd("D:\\Samurai\\R\\DJO\\www")
+runApp('D:/Samurai/R/DJO')
+forecastData<- readRDS("data/forecast.rds")
+forecastData<- readRDS("data/forecast.rds")
+forecastData<- readRDS("data/forecast.rds")
+runApp('D:/Samurai/R/DJO')
+runApp('D:/Samurai/R/DJO')
+forecastData<- readRDS("D:\\Samurai\\R\\DJO\\data\\forecast.rds")
+runApp('D:/Samurai/R/DJO')
+library(plotly)
+library(ggplot2)
+library(sqldf)
+library(plotly)
+library(ggthemes)
+runApp('D:/Samurai/R/DJO')
+runApp('D:/Samurai/R/DJO')
+runApp('D:/Samurai/R/DJO')
